@@ -1,2 +1,12 @@
-# BIMAS_Spring_2023
-BIMAS project by Hope Townsend and Kaylee Rosenberger assessing plant population resilience with common mycelial network facilitated pathogen resistance with agent-based modeling
+# BIMAS Project Spring 2023  
+"Assessing plant population resilience with common mycelial network facilitated pathogen resistance with agent-based modeling"  
+by Hope Townsend and Kaylee Rosenberger  
+Project for Biologically-inspired multi-agent systems course at University of Colorado Boulder  
+[Associated paper](https://docs.google.com/document/d/1h8SsvyPzf_m9B50TlVNRS-ECDgWmDfZaYNlsgr-p_b4/edit?usp=sharing)  
+  
+### Overview  
+Arbuscular mycorrhiza represent a phylum of fungi that form symbiotic relationships with the roots of the majority of terrestrial plant species. Due to their lack of host specificity, they can form large networks to connect multiple plants and even different species of plants. These networks allow exchange of nutrients, water, and signals between neighboring plants. Specifically, affected individuals can send signals to currently unaffected individuals to prepare for infection or herbivory. These signals can result in resistance or tolerance to herbivory/pathogen infection. While the benefits of these networks have been understood on a small scale, no population-level analysis or model has been presented. Here, we develop a model of how signals travel through a common mycorrhizal network (CMN) connecting individual plants in a population, and the implications of this phenomenon on population resilience in the presence of a pathogen invasion.  
+  
+### Model
+Our model was implemented in the program NetLogo ver. 6.3.0, building significantly off the NetLogo sample model 'Virus on a network' (Stonedahl and Wilensky, 2008). We created a population of plants represented by a spatially clustered network. The links of the network represent the CMN connecting individual plants in a population. Our model consists of two major agents: plants that are connected via a common mycelial network, and vectors that are the disease-spreading agents. Plants are nodes in the network, and vectors are randomly distributed throughout the simulation box. Plants can be in one of four categories: susceptible to infection, infected, dead, or resistant to infection--similar to a traditional SIRV model. Plants can become infected when a vector makes contact with them. Infected plants can send resistance signals to their nearest neighbors to prepare for infection. When plants become resistant, they are unable to become infected.  
+For more details about the model and results please see the paper [here](https://docs.google.com/document/d/1h8SsvyPzf_m9B50TlVNRS-ECDgWmDfZaYNlsgr-p_b4/edit?usp=sharing). 
